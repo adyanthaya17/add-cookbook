@@ -1,7 +1,7 @@
 pipeline {
     agent any
     stages {
-        stage('Initialize') {
+        stage('Initialize chef') {
             steps {
                 sh 'cd /home/oss/chef-repo'
             }
