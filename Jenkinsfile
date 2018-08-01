@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent {label 'chef-server'}
     stages {
         stage('Initialize chef') {
             steps {
