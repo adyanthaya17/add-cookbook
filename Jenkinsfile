@@ -3,13 +3,9 @@ pipeline {
     stages {
         stage('Initialize chef') {
             steps {
-                sh 'cd /home/oss/chef-repo'
+                sh '/home/oss/chef-client-run.sh'
             }
         }
-        stage('Build') {
-            steps {
-                sh '/usr/bin/knife node run_list set ucp1 recipe[ntp]'
-            }
-        }
+      
     }
-}
+} 
